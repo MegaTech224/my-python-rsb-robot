@@ -10,11 +10,11 @@ dependencies:
   # When available, prefer the conda-forge packages over pip as installations are more efficient.
   - python=3.11.3               # https://pyreadiness.org/3.9/ 
   - pip=23.0.1                  # https://pip.pypa.io/en/stable/news/
-  - nodejs=16.14.2
+  - nodejs=18.15.0              # https://nodejs.org/en/docs
   - pip:
       # Define pip packages here -> https://pypi.org/
-      - robotframework-browser==13.3.0
-      - rpaframework==23.0.0    # https://rpaframework.org/releasenotes.html
+      - robotframework-browser==16.1.0  # https://robotframework-browser.org/
+      - rpaframework==23.0.0            # https://rpaframework.org/releasenotes.html
 
 rccPostInstall:
   - rfbrowser init
