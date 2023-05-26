@@ -18,7 +18,7 @@ def open_the_intranet_website():
 
 def log_in():
     browser.type_text("css=#username", "maria")
-    browser.type_secret("css=#password", "thoushallnotpass")
+    browser.type_text("css=#password", "thoushallnotpass")  #Problem with type_secret in python: https://forum.robotframework.org/t/comments-for-type-secret/4338
     browser.click("text=Log in")
 
 
